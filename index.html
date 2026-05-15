@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rojas Informática — Servicio técnico de PC y notebooks en San Juan. Instalación Hikvision, alarmas, porteros. Venta de equipos, licencias Windows y Office, desarrollo web.">
+    <meta property="og:title" content="Rojas Informática | Técnico informático en San Juan">
+    <meta property="og:description" content="Servicio técnico de PC, seguridad Hikvision, venta de equipos, licencias digitales y desarrollo web. Atención personalizada.">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#080c14">
+    <title>Rojas Informática | Servicio técnico y tecnología</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/jpeg" href="Logo.jpg">
+</head>
+<body>
+
+    <div class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <img src="Logo.jpg" alt="" class="nav-logo-img">
+                <span>Rojas Informática</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-link active">Inicio</a></li>
+                <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                <li><a href="#contacto-footer" class="nav-link">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <section id="hero">
+        <div class="hero-canvas" id="heroCanvas"></div>
+        <div class="hero-gradient"></div>
+
+        <div class="hero-content">
+            <span class="hero-badge">San Juan, Argentina</span>
+            <h1 class="hero-title">Rojas <em>Informática</em></h1>
+            <p class="hero-subtitle">Técnico informático · Seguridad · Desarrollo</p>
+            <p class="hero-desc">
+                PC y notebooks, seguridad Hikvision, venta de equipos, licencias y desarrollo web, atención personalizada.
+            </p>
+            <div class="hero-actions">
+                <a href="https://wa.me/5492644853601?text=Hola%20Rojas%20Inform%C3%A1tica%2C%20quisiera%20consultar%20sobre..." target="_blank" rel="noopener" class="btn btn-primary">
+                    <i class="fab fa-whatsapp"></i> Consultar
+                </a>
+                <a href="#servicios" class="btn btn-ghost">
+                    Ver servicios <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-aside">
+            <span class="hero-aside-label">Conectá</span>
+            <div class="hero-aside-line"></div>
+        </div>
+    </section>
+
+    <section id="servicios" class="section">
+        <div class="section-header">
+            <span class="tag">Servicios</span>
+            <h2 class="section-title">Lo que <em>ofrecemos</em></h2>
+            <p class="section-desc">Técnico informático, seguridad, equipos y desarrollo.</p>
+        </div>
+        <div class="services-grid">
+            <article class="card">
+                <div class="card-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                <div class="card-image"><img src="assets/images/repair.jpg" alt="Servicio Técnico"></div>
+                <h3 class="card-title">Servicio Técnico</h3>
+                <p class="card-text">Reparación, mantenimiento y puesta a punto de PC y notebooks. Diagnóstico profesional, recuperación de datos, limpieza profunda, upgrades y armado de equipos. Todos los trabajos tienen garantía.</p>
+                <ul class="card-list">
+                    <li><i class="fas fa-check"></i> PC y notebooks</li>
+                    <li><i class="fas fa-check"></i> Armado y upgrades</li>
+                    <li><i class="fas fa-check"></i> Recuperación de datos</li>
+                </ul>
+            </article>
+            <article class="card">
+                <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <div class="card-image"><img src="assets/images/cameras.jpg" alt="Seguridad Hikvision"></div>
+                <h3 class="card-title">Seguridad Hikvision</h3>
+                <p class="card-text">Instalación de cámaras IP y HD, alarmas y porteros eléctricos para hogar, comercio y oficina. Configuración completa con monitoreo remoto desde el celular. Equipos originales Hikvision con garantía.</p>
+                <ul class="card-list">
+                    <li><i class="fas fa-check"></i> Cámaras IP y HD</li>
+                    <li><i class="fas fa-check"></i> Porteros eléctricos</li>
+                    <li><i class="fas fa-check"></i> Alarmas y monitoreo</li>
+                </ul>
+            </article>
+            <article class="card">
+                <div class="card-icon"><i class="fa-solid fa-laptop"></i></div>
+                <div class="card-image"><img src="assets/images/sales.jpg" alt="Venta de Equipos"></div>
+                <h3 class="card-title">Venta de Equipos</h3>
+                <p class="card-text">PC de escritorio, notebooks, monitores y periféricos. También activación de licencias originales Windows y Office con instalación incluida. Asesoramiento personalizado para que compres lo justo, sin pagar de más.</p>
+                <ul class="card-list">
+                    <li><i class="fas fa-check"></i> PC, notebooks y monitores</li>
+                    <li><i class="fas fa-check"></i> Periféricos y accesorios</li>
+                    <li><i class="fas fa-check"></i> Licencias Windows y Office</li>
+                </ul>
+            </article>
+            <article class="card">
+                <div class="card-icon"><i class="fa-solid fa-code"></i></div>
+                <div class="card-image"><img src="assets/images/tech-bg.jpg" alt="Desarrollo Web"></div>
+                <h3 class="card-title">Desarrollo Web</h3>
+                <p class="card-text">Páginas web, sistemas de gestión y automatización a medida. Es un servicio que sumamos desde la formación en programación. Ideal si buscás una solución digital simple y efectiva.</p>
+                <ul class="card-list">
+                    <li><i class="fas fa-check"></i> Páginas web</li>
+                    <li><i class="fas fa-check"></i> Sistemas de gestión</li>
+                    <li><i class="fas fa-check"></i> Automatización</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <div class="licensing-strip">
+        <div class="licensing-strip-inner">
+            <div class="licensing-strip-icon">
+                <i class="fa-solid fa-key"></i>
+            </div>
+            <div class="licensing-strip-text">
+                <h3>Licencias originales Windows y Office</h3>
+                <p>¿Cansado del cartel de "Activá Windows"? Instalación de licencias originales con activación y configuración incluidas. Office listo para usar, sin riesgos ni versiones truchas.</p>
+            </div>
+            <a href="https://wa.me/5492644853601?text=Hola%20Rojas%20Inform%C3%A1tica%2C%20quiero%20consultar%20por%20licencias..." target="_blank" rel="noopener" class="btn btn-primary licensing-cta">
+                <i class="fab fa-whatsapp"></i> Consultar
+            </a>
+        </div>
+    </div>
+
+    <section id="nosotros" class="section">
+        <div class="section-header">
+            <span class="tag">Nosotros</span>
+            <h2 class="section-title">Trayectoria que <em>respalda</em></h2>
+        </div>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>
+                    Rojas Informática es una empresa dedicada al servicio técnico de PC y notebooks, seguridad electrónica Hikvision, venta de equipos informáticos, licencias de software y desarrollo web. Con más de 8 años en el mercado, brindamos atención personalizada tanto a particulares como a comercios y oficinas.
+                </p>
+                <p>
+                    Trabajamos con equipos originales, marcas reconocidas y estándares de calidad comprobados. Cada servicio se realiza con compromiso y responsabilidad, respaldado por nuestra experiencia.
+                </p>
+                <p>
+                    No somos una agencia ni tercerizamos el trabajo. Atendemos de forma directa y transparente, con facturación en regla. Nuestro objetivo es resolver tu problema técnico sin vueltas, con seriedad y al precio justo.
+                </p>
+            </div>
+            <div class="about-visual">
+                <div class="about-image-frame">
+                    <img src="assets/images/workspace.jpg" alt="Rojas Informática">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="contacto-footer">
+        <div class="footer-inner">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <img src="Logo.jpg" alt="" class="footer-logo">
+                    <div>
+                        <h4>Rojas Informática</h4>
+                        <p>San Juan, Argentina</p>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <a href="https://wa.me/5492644853601" target="_blank" rel="noopener" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                    <a href="mailto:javierrojas62@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i> Email
+                    </a>
+                    <a href="https://www.facebook.com/share/18Eqaxi8MM/" target="_blank" rel="noopener" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i> Facebook
+                    </a>
+                    <a href="https://github.com/javierrojas62" target="_blank" rel="noopener" aria-label="GitHub">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bar">
+                <span>&copy; 2026 Rojas Informática</span>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5492644853601?text=Hola%20Rojas%20Inform%C3%A1tica%2C%20quisiera%20consultar%20sobre..." target="_blank" rel="noopener" class="whatsapp-float" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
