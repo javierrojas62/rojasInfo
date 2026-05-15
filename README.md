@@ -3,7 +3,7 @@
 <div align="center">
   <img src="Logo.jpg" alt="" width="100" style="border-radius: 10px;">
   <br><br>
-  <strong>San Luis, Argentina</strong>
+  <strong>San Juan, Argentina</strong>
   <br><br>
 
   [![GitHub Pages](https://img.shields.io/badge/Deploy-GitHub%20Pages-00d4ff?style=for-the-badge&logo=github)](https://javierrojas62.github.io/rojas-informatica)
