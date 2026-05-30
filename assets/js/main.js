@@ -14,9 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
         renderer.setClearColor(0x000000, 0);
         canvas.appendChild(renderer.domElement);
 
-        const NODES = 280;
-        const SPREAD = 22;
-        const CONNECT_DIST = 5.5;
+        const isMobile = window.innerWidth < 768;
+        const NODES = isMobile ? 100 : 280;
+        const SPREAD = isMobile ? 16 : 22;
+        const CONNECT_DIST = isMobile ? 4.5 : 5.5;
 
         const positions = new Float32Array(NODES * 3);
         const velocities = [];
@@ -36,10 +37,10 @@ document.addEventListener('DOMContentLoaded', () => {
         nodeGeo.setAttribute('position', new THREE.BufferAttribute(positions, 3));
 
         const nodeMat = new THREE.PointsMaterial({
-            size: 0.04,
+            size: isMobile ? 0.06 : 0.045,
             color: 0x00d4ff,
             transparent: true,
-            opacity: 0.25,
+            opacity: isMobile ? 0.3 : 0.28,
             blending: THREE.AdditiveBlending,
             sizeAttenuation: true,
             depthWrite: false,
@@ -67,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const edgeMat = new THREE.LineBasicMaterial({
             color: 0x00d4ff,
             transparent: true,
-            opacity: 0.04,
+            opacity: isMobile ? 0.06 : 0.05,
             blending: THREE.AdditiveBlending,
             depthWrite: false,
         });
@@ -188,7 +189,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // ─── REVEAL ───
 
     function initReveal() {
-        const el = document.querySelectorAll('.card, .about-grid, .about-stats, .section-header');
+        const el = document.querySelectorAll('.card, .about-grid, .about-stats, .section-header, .cta-inner');
+        const cards = document.querySelectorAll('.card');
+
         const obs = new IntersectionObserver((entries) => {
             entries.forEach(e => {
                 if (e.isIntersecting) {
@@ -200,7 +203,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         el.forEach((e, i) => {
             e.classList.add('reveal');
-            if (i < 5) e.classList.add('reveal-d' + (i + 1));
+            if (e.classList.contains('card')) {
+                const cardIdx = [...cards].indexOf(e);
+                if (cardIdx >= 0) e.classList.add('reveal-d' + Math.min(cardIdx + 1, 5));
+            } else if (i < 4) {
+                e.classList.add('reveal-d' + (i + 1));
+            }
             obs.observe(e);
         });
     }
@@ -218,12 +226,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (e.isIntersecting) {
                     const el = e.target;
                     const target = parseInt(el.dataset.target);
+                    const suffix = el.dataset.suffix || '';
                     let current = 0;
                     const step = Math.max(1, Math.floor(target / 50));
                     const t = setInterval(() => {
                         current += step;
                         if (current >= target) { current = target; clearInterval(t); }
-                        el.textContent = current;
+                        el.textContent = current + (current >= target ? suffix : '');
                     }, 25);
                     obs.unobserve(el);
                 }

@@ -12,17 +12,19 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="image/jpeg" href="Logo.jpg">
 </head>
 <body>
 
+    <a class="skip-link" href="#main-content">Saltear al contenido</a>
+
     <div class="navbar" id="navbar">
         <div class="nav-container">
             <a href="#hero" class="nav-logo">
-                <img src="Logo.jpg" alt="" class="nav-logo-img">
+                <img src="Logo.jpg" alt="Rojas Informática" class="nav-logo-img">
                 <span>Rojas Informática</span>
             </a>
             <button class="nav-toggle" id="navToggle" aria-label="Menú">
@@ -39,12 +41,17 @@
         </div>
     </div>
 
+    <main id="main-content">
+
     <section id="hero">
         <div class="hero-canvas" id="heroCanvas"></div>
+        <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
+        <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
+        <div class="hero-bg-dots" aria-hidden="true"></div>
         <div class="hero-gradient"></div>
 
         <div class="hero-content">
-            <span class="hero-badge">San Juan, Argentina</span>
+            <span class="hero-badge"><span class="badge-dot" aria-hidden="true"></span>San Juan, Argentina</span>
             <h1 class="hero-title">Rojas <em>Informática</em></h1>
             <p class="hero-subtitle">Técnico informático · Seguridad · Desarrollo</p>
             <p class="hero-desc">
@@ -52,17 +59,21 @@
             </p>
             <div class="hero-actions">
                 <a href="https://wa.me/5492644853601?text=Hola%20Rojas%20Inform%C3%A1tica%2C%20quisiera%20consultar%20sobre..." target="_blank" rel="noopener" class="btn btn-primary">
-                    <i class="fab fa-whatsapp"></i> Consultar
+                    <i class="fab fa-whatsapp" aria-hidden="true"></i> Consultar
                 </a>
                 <a href="#servicios" class="btn btn-ghost">
-                    Ver servicios <i class="fas fa-arrow-right"></i>
+                    Ver servicios <i class="fas fa-arrow-right" aria-hidden="true"></i>
                 </a>
             </div>
         </div>
 
         <div class="hero-aside">
-            <span class="hero-aside-label">Conectá</span>
+            <span class="hero-aside-label">Explorar</span>
             <div class="hero-aside-line"></div>
+        </div>
+
+        <div class="hero-scroll-hint" aria-hidden="true">
+            <div class="hero-scroll-line"></div>
         </div>
     </section>
 
@@ -74,47 +85,47 @@
         </div>
         <div class="services-grid">
             <article class="card">
-                <div class="card-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
-                <div class="card-image"><img src="assets/images/repair.jpg" alt="Servicio Técnico"></div>
+                <div class="card-icon"><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i></div>
+                <div class="card-image"><img src="assets/images/repair.jpg" alt="Servicio Técnico" loading="lazy"></div>
                 <h3 class="card-title">Servicio Técnico</h3>
                 <p class="card-text">Reparación, mantenimiento y puesta a punto de PC y notebooks. Diagnóstico profesional, recuperación de datos, limpieza profunda, upgrades y armado de equipos. Todos los trabajos tienen garantía.</p>
                 <ul class="card-list">
-                    <li><i class="fas fa-check"></i> PC y notebooks</li>
-                    <li><i class="fas fa-check"></i> Armado y upgrades</li>
-                    <li><i class="fas fa-check"></i> Recuperación de datos</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> PC y notebooks</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Armado y upgrades</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Recuperación de datos</li>
                 </ul>
             </article>
             <article class="card">
-                <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
-                <div class="card-image"><img src="assets/images/cameras.jpg" alt="Seguridad Hikvision"></div>
+                <div class="card-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
+                <div class="card-image"><img src="assets/images/cameras.jpg" alt="Instalación de cámaras de seguridad Hikvision" loading="lazy"></div>
                 <h3 class="card-title">Seguridad Hikvision</h3>
                 <p class="card-text">Instalación de cámaras IP y HD, alarmas y porteros eléctricos para hogar, comercio y oficina. Configuración completa con monitoreo remoto desde el celular. Equipos originales Hikvision con garantía.</p>
                 <ul class="card-list">
-                    <li><i class="fas fa-check"></i> Cámaras IP y HD</li>
-                    <li><i class="fas fa-check"></i> Porteros eléctricos</li>
-                    <li><i class="fas fa-check"></i> Alarmas y monitoreo</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Cámaras IP y HD</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Porteros eléctricos</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Alarmas y monitoreo</li>
                 </ul>
             </article>
             <article class="card">
-                <div class="card-icon"><i class="fa-solid fa-laptop"></i></div>
-                <div class="card-image"><img src="assets/images/sales.jpg" alt="Venta de Equipos"></div>
+                <div class="card-icon"><i class="fa-solid fa-laptop" aria-hidden="true"></i></div>
+                <div class="card-image"><img src="assets/images/sales.jpg" alt="Venta de equipos informáticos" loading="lazy"></div>
                 <h3 class="card-title">Venta de Equipos</h3>
                 <p class="card-text">PC de escritorio, notebooks, monitores y periféricos. También activación de licencias originales Windows y Office con instalación incluida. Asesoramiento personalizado para que compres lo justo, sin pagar de más.</p>
                 <ul class="card-list">
-                    <li><i class="fas fa-check"></i> PC, notebooks y monitores</li>
-                    <li><i class="fas fa-check"></i> Periféricos y accesorios</li>
-                    <li><i class="fas fa-check"></i> Licencias Windows y Office</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> PC, notebooks y monitores</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Periféricos y accesorios</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Licencias Windows y Office</li>
                 </ul>
             </article>
             <article class="card">
-                <div class="card-icon"><i class="fa-solid fa-code"></i></div>
-                <div class="card-image"><img src="assets/images/tech-bg.jpg" alt="Desarrollo Web"></div>
+                <div class="card-icon"><i class="fa-solid fa-code" aria-hidden="true"></i></div>
+                <div class="card-image"><img src="assets/images/tech-bg.jpg" alt="Desarrollo web a medida" loading="lazy"></div>
                 <h3 class="card-title">Desarrollo Web</h3>
                 <p class="card-text">Páginas web, sistemas de gestión y automatización a medida. Es un servicio que sumamos desde la formación en programación. Ideal si buscás una solución digital simple y efectiva.</p>
                 <ul class="card-list">
-                    <li><i class="fas fa-check"></i> Páginas web</li>
-                    <li><i class="fas fa-check"></i> Sistemas de gestión</li>
-                    <li><i class="fas fa-check"></i> Automatización</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Páginas web</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Sistemas de gestión</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Automatización</li>
                 </ul>
             </article>
         </div>
@@ -122,7 +133,7 @@
 
     <div class="licensing-strip">
         <div class="licensing-strip-inner">
-            <div class="licensing-strip-icon">
+            <div class="licensing-strip-icon" aria-hidden="true">
                 <i class="fa-solid fa-key"></i>
             </div>
             <div class="licensing-strip-text">
@@ -130,7 +141,7 @@
                 <p>¿Cansado del cartel de "Activá Windows"? Instalación de licencias originales con activación y configuración incluidas. Office listo para usar, sin riesgos ni versiones truchas.</p>
             </div>
             <a href="https://wa.me/5492644853601?text=Hola%20Rojas%20Inform%C3%A1tica%2C%20quiero%20consultar%20por%20licencias..." target="_blank" rel="noopener" class="btn btn-primary licensing-cta">
-                <i class="fab fa-whatsapp"></i> Consultar
+                <i class="fab fa-whatsapp" aria-hidden="true"></i> Consultar
             </a>
         </div>
     </div>
@@ -151,20 +162,51 @@
                 <p>
                     No somos una agencia ni tercerizamos el trabajo. Atendemos de forma directa y transparente, con facturación en regla. Nuestro objetivo es resolver tu problema técnico sin vueltas, con seriedad y al precio justo.
                 </p>
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-target="8" data-suffix="+">0</span>
+                        <span class="stat-label">Años de experiencia</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="200" data-suffix="+">0</span>
+                        <span class="stat-label">Clientes atendidos</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="4">0</span>
+                        <span class="stat-label">Servicios disponibles</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="100" data-suffix="%">0</span>
+                        <span class="stat-label">Trabajos con garantía</span>
+                    </div>
+                </div>
             </div>
             <div class="about-visual">
                 <div class="about-image-frame">
-                    <img src="assets/images/workspace.jpg" alt="Rojas Informática">
+                    <img src="assets/images/workspace.jpg" alt="Espacio de trabajo de Rojas Informática" loading="lazy">
                 </div>
             </div>
         </div>
     </section>
 
+    <section class="cta-section" aria-labelledby="cta-heading">
+        <div class="cta-inner">
+            <span class="tag">Contacto</span>
+            <h2 id="cta-heading">¿Tenés un problema <em>técnico</em>?</h2>
+            <p>Consultá sin compromiso. Atención directa y personalizada, respuesta rápida.</p>
+            <a href="https://wa.me/5492644853601?text=Hola%20Rojas%20Inform%C3%A1tica%2C%20quisiera%20consultar%20sobre..." target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+                <i class="fab fa-whatsapp" aria-hidden="true"></i> Escribinos por WhatsApp
+            </a>
+        </div>
+    </section>
+
+    </main>
+
     <footer class="footer" id="contacto-footer">
         <div class="footer-inner">
             <div class="footer-main">
                 <div class="footer-brand">
-                    <img src="Logo.jpg" alt="" class="footer-logo">
+                    <img src="Logo.jpg" alt="Rojas Informática" class="footer-logo">
                     <div>
                         <h4>Rojas Informática</h4>
                         <p>San Juan, Argentina</p>
