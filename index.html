@@ -12,12 +12,17 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style2.css">
     <link rel="icon" type="image/jpeg" href="Logo.jpg">
 </head>
 <body>
+
+    <!-- ─── ATMÓSFERA: red neuronal + aura + grano ─── -->
+    <canvas id="neural-canvas" aria-hidden="true"></canvas>
+    <div class="aura" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
 
     <a class="skip-link" href="#main">Saltear al contenido</a>
 
@@ -60,7 +65,7 @@
             <div class="hero-bg" aria-hidden="true">
                 <div class="hero-blob hero-blob-1"></div>
                 <div class="hero-blob hero-blob-2"></div>
-                <div class="hero-dots"></div>
+                <div class="hero-grid"></div>
                 <div class="hero-vignette"></div>
             </div>
 
@@ -147,6 +152,7 @@
 
                 <div class="services-grid">
                     <article class="svc-card reveal" style="--delay:.05s">
+                        <span class="hud-corner tl" aria-hidden="true"></span><span class="hud-corner tr" aria-hidden="true"></span><span class="hud-corner bl" aria-hidden="true"></span><span class="hud-corner br" aria-hidden="true"></span>
                         <div class="svc-img">
                             <img src="assets/images/repair.jpg" alt="Servicio técnico de PC" loading="lazy">
                         </div>
@@ -165,6 +171,7 @@
                     </article>
 
                     <article class="svc-card reveal" style="--delay:.1s">
+                        <span class="hud-corner tl" aria-hidden="true"></span><span class="hud-corner tr" aria-hidden="true"></span><span class="hud-corner bl" aria-hidden="true"></span><span class="hud-corner br" aria-hidden="true"></span>
                         <div class="svc-img">
                             <img src="assets/images/cameras.jpg" alt="Instalación de cámaras de seguridad" loading="lazy">
                         </div>
@@ -183,6 +190,7 @@
                     </article>
 
                     <article class="svc-card reveal" style="--delay:.15s">
+                        <span class="hud-corner tl" aria-hidden="true"></span><span class="hud-corner tr" aria-hidden="true"></span><span class="hud-corner bl" aria-hidden="true"></span><span class="hud-corner br" aria-hidden="true"></span>
                         <div class="svc-img">
                             <img src="assets/images/sales.jpg" alt="Venta de equipos informáticos" loading="lazy">
                         </div>
@@ -201,6 +209,7 @@
                     </article>
 
                     <article class="svc-card reveal" style="--delay:.2s">
+                        <span class="hud-corner tl" aria-hidden="true"></span><span class="hud-corner tr" aria-hidden="true"></span><span class="hud-corner bl" aria-hidden="true"></span><span class="hud-corner br" aria-hidden="true"></span>
                         <div class="svc-img">
                             <img src="assets/images/tech-bg.jpg" alt="Desarrollo web a medida" loading="lazy">
                         </div>

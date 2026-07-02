@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -m http.server 8099)",
+      "Bash(echo \"server pid $!\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8099/index.html)",
+      "Bash(which chromium *)",
+      "Read(//home/javier-rojas/.cache/ms-playwright/**)",
+      "Bash(google-chrome --headless --disable-gpu --hide-scrollbars --window-size=1440,3600 --screenshot=full.png --virtual-time-budget=4000 http://localhost:8099/index.html)",
+      "Bash(google-chrome --headless --disable-gpu --hide-scrollbars --window-size=1440,900 --screenshot=hero.png --virtual-time-budget=4000 http://localhost:8099/index.html)",
+      "Bash(sed 's#</head>#<style>.reveal{opacity:1!important;transform:none!important;filter:none!important}.hero{min-height:auto!important}</style></head>#' index.html)",
+      "Bash(google-chrome --headless --disable-gpu --hide-scrollbars --window-size=1440,5200 --screenshot=verify.png --virtual-time-budget=4500 http://localhost:8099/_verify.html)",
+      "Bash(pkill -f \"http.server 8099\")"
+    ]
+  }
+}
